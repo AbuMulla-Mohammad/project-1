@@ -1,0 +1,103 @@
+/* start general rules  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family:'poppins',sans-serif;
+}
+a{
+    text-decoration: none;
+
+}
+.container{
+    width: calc(100% - 124px);
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+:root{
+    --primary-color:#545BE8;
+}
+/* end general rules */
+/* start header */
+header{
+    box-shadow: 1px 4px 11px -6px rgba(0,0,0,0.75);
+}
+header nav{
+    padding: 15px 0;
+}
+header nav .logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+header nav .logo img{
+    width: 35px;
+}
+header nav .logo a{
+    color:var(--primary-color);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "inter";
+}
+header nav ul{
+    display: flex;
+    gap: 25px;
+}
+header nav ul li a{
+    color: #101928;
+    padding:10px 20px;
+    text-transform: capitalize;
+    transition: all 0.5s;
+}
+header nav ul li a.active ,
+header nav ul li a:hover{
+    font-weight: bold;
+}
+header nav .auth{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+header nav .auth a{
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition:all 0.5s;
+}
+header nav .auth .login{
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    
+}
+header nav .auth .login:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+header nav .auth .register{
+    color: white;
+    background-color: var(--primary-color);
+}
+header nav .auth .register:hover{
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+}
+/* end header */
+
